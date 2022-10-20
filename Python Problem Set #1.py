@@ -10,12 +10,12 @@ def isMultiple(x,y):
     x = int(x)
     y = int(y)
     result = x / y
-    if x mod y = 0:
+    if x % y == 0:
         print(x + "is a multiple of" + y)
     else: print(x + "is not a multiple of" + y)
     
 
-def palindrome(word)
+def palindrome(word):
 
     return word == word[::-1]
 
@@ -37,4 +37,4 @@ def main():
     palindrome()
 
  if __name__ == "__main__":
-main()
+     main()
