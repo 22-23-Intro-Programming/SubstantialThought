@@ -22,7 +22,7 @@ def palindrome(word)
     return word == word[::-1]
 
     word = "Racecar"
-    res = isPalindrome(s)
+    res = isPalindrome(word)
  
 if res:
     print("Congratulations! Your word is a palindrome!")
