@@ -9,6 +9,8 @@ def name():
     
 def isMultiple(x,y):
     
+    x = int(x)
+    y = int(y)
     result = x / y
     if x mod y = 0:
         print(x + "is a multiple of" + y)
@@ -20,7 +22,7 @@ def palindrome(word)
     return word == word[::-1]
 
     word = "Racecar"
-res = isPalindrome(s)
+    res = isPalindrome(s)
  
 if res:
     print("Congratulations! Your word is a palindrome!")
@@ -32,7 +34,7 @@ def main():
 
     name()
 
-    isMultiple()
+    isMultiple(42,7)
 
     palindrome()
 
