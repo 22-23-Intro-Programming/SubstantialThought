@@ -15,6 +15,9 @@ def main():
     T = Text(Point(400, 250), "Write Your Potential Palindrome.")
     T.draw(win)
 
+    L = Text(Point(400, 200), "")
+    L.draw(win)
+
     while True:
         m = win.getMouse()
 
@@ -30,17 +33,15 @@ def main():
             for char in answer:
                 if (answer[0+i] != answer[last-i]):
 
-                    return False
+                    L.setText("That's Not A Palindrome!")
 
-                    i = i + 1
+                    break
+
+                i = i + 1
+
+                L.setText("You Have A Palindrome!")
         
-            return True
-
-            if True:
-                print("You Have A Palindrome!")
-
-            if False:
-                print("You Don't Have A Palindrome!")
+          
         
         if Q.isClicked(m):
 
